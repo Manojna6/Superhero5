@@ -4,7 +4,7 @@ var block_image_width = 30;
 var player_x = 300;
 var player_y = 400;
 var player_object = "";
-var block = "";
+var block_image_object = "";
 window.addEventListener("keydown", my_keydown);
 
 function player_update()
