@@ -1,8 +1,8 @@
 var canvas = new fabric.Canvas('myCanvas');
 var block_image_height = 30;
 var block_image_width = 30;
-var player_x = 0;
-var player_y = 0;
+var player_x = 100;
+var player_y = 100;
 var player_object = "";
 var block = "";
 window.addEventListener("keydown", my_keydown);
