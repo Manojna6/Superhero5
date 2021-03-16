@@ -1,10 +1,10 @@
 var canvas = new fabric.Canvas('myCanvas');
 var block_image_height = 30;
 var block_image_width = 30;
-var player_x = 300;
-var player_y = 400;
+var player_x = 0;
+var player_y = 0;
 var player_object = "";
-var block_image_object = "";
+var block = "";
 window.addEventListener("keydown", my_keydown);
 
 function player_update()
@@ -117,7 +117,7 @@ function left(){
     }
 }
 function right(){
-    if(player_x<=0){
+    if(player_x>=895){
         player_x=player_x-block_image_width
         console.log("block image width = " + block_image_width);
         console.log("When up arrow key is pressed, X = " + player_x+" , Y = "+player_y);
@@ -126,7 +126,7 @@ function right(){
     }
 }
 function down(){
-    if(player_y<=0){
+    if(player_y>=600){
         player_y=player_y-block_image_height
         console.log("block image height = " + block_image_height);
         console.log("When up arrow key is pressed, X = " + player_x+" , Y = "+player_y);
