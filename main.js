@@ -118,7 +118,7 @@ function left(){
 }
 function right(){
     if(player_x<=895){
-        player_x=player_x-block_image_width
+        player_x=player_x+block_image_width
         console.log("block image width = " + block_image_width);
         console.log("When up arrow key is pressed, X = " + player_x+" , Y = "+player_y);
         canvas.remove(player_object);
@@ -127,7 +127,7 @@ function right(){
 }
 function down(){
     if(player_y<=600){
-        player_y=player_y-block_image_height
+        player_y=player_y+block_image_height
         console.log("block image height = " + block_image_height);
         console.log("When up arrow key is pressed, X = " + player_x+" , Y = "+player_y);
         canvas.remove(player_object);
